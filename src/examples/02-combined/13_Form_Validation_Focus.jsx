@@ -34,7 +34,7 @@ export default function FormValidation() {
 
   return (
     <form className="card" onSubmit={onSubmit}>
-      <div className="row"><input ref={emailRef} name="email" value={values.email} onChange={change} onBlur={blur} placeholder="email" /></div>
+      <div className="row"><input ref={emailRef} name="email" type="email" value={values.email} onChange={change} onBlur={blur} placeholder="email" /></div>
       {show('email') && <div className="err">{errors.email}</div>}
       <div className="row"><input ref={passRef} name="password" type="password" value={values.password} onChange={change} onBlur={blur} placeholder="password" /></div>
       {show('password') && <div className="err">{errors.password}</div>}
